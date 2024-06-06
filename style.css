@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+   
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 239, 234);
+}
+.header__container {
+    display: grid;
+    gap: 2rem;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+.header__image  {
+    width: 100%;
+    margin-inline: inherit;
+    
+}
+.header__image img{
+    max-width: 400px;
+    position: relative;
+}
+.top{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(C:/Users/Krisha/OneDrive/Documents/Octanet_june/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.079);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline ;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: rgb(62, 27, 27);
+    bottom: 5%;
+}
+
+.text h1{
+    font-weight: 600;
+    font-size: 5vw;
+    
+}
+
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.rtext p{
+    font-size: 15px;
+}
+.rtext p:hover{
+    color:white;
+}
+
+.header__content {
+    text-align: center;
+   
+  }
+  
+  .header__content h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 5rem;
+    color: black;
+  }
+  
+  .header__content p {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: black;
+  }
+  
+  .header__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .header__btns img {
+    max-width: 150px;
+    border-radius: 5px;
+    align-items: center;
+   
+  }
+
+
+
+.b3{
+    display: flex;
+    width: 500px;
+    height: 10px;
+    min-height: 50vh;
+}
+.b3 .overlay{
+    justify-content: center;
+    position: relative;
+    margin-left: 50%;
+    width:100%;
+    height: 10%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay p{
+    
+    padding: 1vh;
+    text-align: left;
+    position: relative;
+    align-items: center;
+    justify-content:left;
+} 
+.b3 .overlay p:hover{
+    color: rgb(228, 181, 95);
+    display:contents;
+   
+}
+@media(max-width: 700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+@media(width = 700px){
+    .text{
+        flex-direction: column;
+        align-items: last baseline;
+    }
+    .text h1{
+        font-size: 100vh;
+       font-weight: 600;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    
+    .header__image {
+        grid-area: 5/2/2/3;
+
+    }
+    
+      .header__content {
+        text-align: left;
+    }
+    
+      .header__btns {
+        justify-content: flex-start;
+    }
+    .b3{
+        width: 100%;
+        min-height: 10vh;
+        background-position: left;
+    }
+}
